@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="general-info">
+      <div class="general-info-data">
+        <div class="general-info-data-city">
+          <h3 class="data-city-name" id="cityName">Bishkek</h3>
+          <input type="text" id="cityInput" placeholder="Enter city name">
+          <button id="searchBtn">Search</button>
+          <div id="weatherInfo" class="hidden">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="date"></p>
+          </div>
+          <p id="error" class="hidden">City not found. Please enter a valid city name.</p>
+        </div>
+        <div class="general-info-data-short">Cloudy</div>
+        <div class="general-info-data-celsius">
+          <h2 class="temperature">26 C</h2>
+          <div class="date-info">
+            <h4 class="weekday"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="general-info-image-container">
+        <img class="general-info-image" src="./assets/bigclouds.png" alt="" />
+      </div>
+    </div>
+      <div class="dashboard">
+        <div class="dashboard-sidemenu">
+          <img class="avatar" src="./assets/avatar.png" alt="" />
+          
+          <div class="options">
+            <div class="option-item">
+              <img class="options-icon" src="./assets/rain.png" alt="" />
+              <h5 class="option-label">weather</h5>
+            </div>
+            <div class="option-item">
+              <img class="options-icon" src="./assets/explore.png" alt="" />
+              <h5 class="option-label">explore</h5>
+
+            </div>
+            <div class="option-item">
+              <img class="options-icon" src="/assets/location.png" alt="" />
+              <h5 class="option-label">cities</h5>
+
+            </div>
+            <div class="option-item">
+              <img class="options-icon" src="./assets/sun.png" alt="" />
+              <h5 class="option-label">settings</h5>
+
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-center">
+          <div class="center-activities">
+            <div class="activities-title">
+              <img class="activities-icon" src="./assets/heart.png" alt="" />
+              <h3 class="activities-text">Activities in your area</h3>
+            </div>
+            <div class="activities-near">
+              <div class="near-card">
+                <img src="./assets/activity1.png" alt="" class="near-card-image" />
+                <h5 class="near-card-text">2km away</h5>
+              </div>
+              <div class="near-card">
+                <img src="./assets/activity2.png" alt="" class="near-card-image" />
+                <h5 class="near-card-text">1.5 kkm away</h5>
+              </div>
+              <div class="near-card">
+                <img src="./assets/activity3.png" alt="" class="near-card-image" />
+                <h5 class="near-card-text">3km away</h5>
+              </div>
+              <div class="near-card">
+                <img src="./assets/activity4.png" alt="" class="near-card-image" />
+                <h5 class="near-card-text">500m away</h5>
+              </div>
+            </div>
+          </div>
+          <div class="forecast">
+            <div class="forecast-text">
+              <img class="forecast-text-clock-icon" src="./assets/clock2.png" alt="">
+              <h5 class="forecast-label">24-hour forecast</h5>
+            </div>
+            <div class="forecast-content">
+              forecast content
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-additional">
+          <div class="daily-forecast">
+            <div class="daily-forecast-weekday">
+              <div class="daily-forecast-day-side">
+                <h3 class="day-of-week-side">FRI</h3>
+                <img src="./assets/rainy.png" alt="" class="day-of-week-image">
+              </div>
+              <div class="daily-forecast-day-mid">
+                <h3 class="day-of-week-mid">SAT</h3>
+                <img src="./assets/sunny.png" alt="" class="day-of-week-image">
+              </div>
+              <div class="daily-forecast-day-center">
+                <h3 class="day-of-week-center">SUN</h3>
+                <img src="./assets/cloudy.png" alt="" class="day-of-week-image">
+              </div>
+              <div class="daily-forecast-day-mid">
+                <h3 class="day-of-week-mid">MON</h3>
+                <img src="./assets/cloudrain.png" alt="" class="day-of-week-image">
+              </div>
+              <div class="daily-forecast-day-side">
+                <h3 class="day-of-week-side">TUES</h3>
+                <img src="./assets/thunder.png" alt="" class="day-of-week-image">
+              </div>
+            </div>
+            <div class="daily-forecast-clock">
+              <img class="forecast-clock-icon" src="./assets/clock2.png" alt="" >
+              <h3 class="daily-forecast-time">8:00PM GMT</h3>
+
+            </div>
+            <h3 class="air-conditions-title">AIR CONDITIONS</h3>
+
+            <div class="air-conditions">
+
+              <div class="air-conditions-item">
+                <div class="item-label">
+                  <img src="./assets/thermometer.png" alt="" class="item-label-icon">
+                  <h5 class="item-label-text">Real Feel</h5>
+                </div>
+                <h3 class="item-degrees">30°</h3>
+              </div>
+
+              <div class="air-conditions-item">
+                <div class="item-label">
+                  <img src="./assets/wind.png" alt="" class="item-label-icon">
+                  <h5 class="item-label-text">Wind</h5>
+                </div>
+                <h3 class="item-degrees">0.8 km/hr</h3>
+              </div>
+
+              <div class="air-conditions-item">
+                <div class="item-label">
+                  <img src="./assets/drop.png" alt="" class="item-label-icon">
+                  <h5 class="item-label-text">Chance of rain</h5>
+                </div>
+                <h3 class="item-degrees">2%</h3>
+              </div>
+
+              <div class="air-conditions-item">
+                <div class="item-label">
+                  <img src="./assets/sunny.png" alt="" class="item-label-icon">
+                  <h5 class="item-label-text">UV index</h5>
+                </div>
+                <h3 class="item-degrees">4</h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+  </html>

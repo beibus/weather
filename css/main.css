@@ -1,0 +1,302 @@
+body {
+  background-color: #7c786f;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  width: 1440;
+  height: 960px;
+  background-color: #d69e36;
+  border-radius: 20px;
+  padding: 51px 97px;
+}
+
+.general-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.general-info-data {
+  width: 206px;
+  height: 318px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.general-info-data-city {
+  width: 172px;
+  height: 30px;
+}
+
+.data-city-name {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.general-info-data-short {
+  width: 196px;
+  height: 47px;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.general-info-image-container {
+  width: 321px;
+  height: 254.13px;
+}
+
+.general-info-image {
+  width: 100%;
+}
+
+.temperature {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.date-info {
+  display: flex;
+}
+.weekday {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-sidemenu {
+  width: 100px;
+  height: 537px;
+  padding: 20px, 7px, 20px, 8px;
+  border-radius: 40px;
+  background-color: #deab4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  padding-top: 25px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  padding-bottom: 25px;
+}
+.options-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.option-label {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dashboard-center {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.center-activities {
+  width: 884px;
+height: 244px;
+border-radius: 40px;
+background-color: #deab4d;
+
+}
+
+.activities-title {
+  width: 294px;
+height: 30px;
+display: flex;
+align-items: center;
+margin: 20px 35px;
+}
+
+.activities-icon {
+  width: 30px;
+
+}
+
+.activities-text {
+font-size: 24px;
+font-weight: 500;
+
+}
+
+.activities-near {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.near-card-text {
+font-size: 12px;
+font-weight: 500;
+color: #2B261D;
+}
+
+.forecast {
+  width: 884px;
+height: 262px;
+display: flex;
+flex-direction: column;
+border-radius: 40px;
+background-color: #deab4d;
+
+}
+
+.forecast-text {
+  display: flex;
+margin: 11px 35px ;
+}
+
+.forecast-label {
+font-size: 14px;
+font-weight: 500;
+}
+
+.dashboard-additional {
+  width: 324px;
+height: 537px;
+border-radius: 40px;
+background-color: #deab4d;
+
+}
+
+.daily-forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.daily-forecast-weekday {
+  display: flex;
+}
+
+.daily-forecast-clock {
+  display: flex;
+}
+
+.air-conditions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+
+}
+
+.day-of-week-side {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  
+}
+
+.day-of-week-mid {
+  font-size: 14.17px;
+  font-weight: 400;
+  text-align: center;
+  
+}
+
+.day-of-week-center {
+  font-size: 17.72px;
+  font-weight: 400;
+  text-align: center;
+  
+}
+
+.daily-forecast-weekday {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 1px solid red;
+
+}
+.daily-forecast-clock {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 15px;
+}
+.daily-forecast-time {
+font-size: 17px;
+font-weight: 500;
+text-align: center;
+}
+
+.forecast-clock-icon, . {
+  width: 15;
+  height: 15;
+margin-right: 3px;
+
+}
+.daily-forecast-day-side {
+  height: 90%;
+}
+
+.daily-forecast-day-mid {
+  height: 95%;
+
+
+}
+
+.daily-forecast-day-center {
+  height: 100%;
+}
+
+.air-conditions-title {
+font-size: 14px;
+font-weight: 700;
+text-align: left;
+
+}
+.item-label {
+display: flex;
+align-items: center;
+}
+
+.item-label-text {
+font-size: 12px;
+font-weight: 500;
+text-align: left;
+margin-left: 5px;
+}
+
+.item-degrees {
+font-size: 16px;
+font-weight: 500;
+text-align: left;
+margin-left: 30px;
+
+}
+
+.hidden {
+  display: none;
+}
